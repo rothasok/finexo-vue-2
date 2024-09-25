@@ -18,6 +18,7 @@
                       Crypto <br />
                       {{ $t('currency') }}
                     </h1>
+                    
                     <p>
                       Explicabo esse amet tempora quibusdam laudantium, laborum
                       eaque magnam fugiat hic? Esse dicta aliquid error
@@ -110,8 +111,10 @@
 </template>
 <script>
 import Header from "@/components/Header.vue";
+
 export default {
   components: {
+    
     Header,
   },
 };

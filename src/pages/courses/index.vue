@@ -43,6 +43,7 @@
 <script>
 import CourseCard from "@/components/cards/CourseCard.vue";
 import axios from "axios";
+import courseAPI from "@/Utils/api.js";
 export default {
   components: {
     CourseCard,
@@ -53,9 +54,11 @@ export default {
     };
   },
   async created() {
-    const response = await axios.get("/v1/courses");
+    // const response = await axios.get("/v1/courses");
+   const response = await axios.get(courseAPI());
     const courses = response.data;
     this.courses = courses;
+    console.log(courses);
   },
 };
 </script>
