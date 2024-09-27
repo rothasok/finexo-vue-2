@@ -11,7 +11,7 @@ import CoursePage from '@/pages/courses/CoursePage.vue'
 import Login from "@/pages/login.vue"
 import Repository from '@/pages/Repository.vue'
 import Register from '@/pages/Register.vue'
-
+import NotFound from "@/components/NotFound.vue"
 const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
@@ -26,7 +26,8 @@ const routes = [
     { path: '/courses/:id', component: CoursePage },
     { path: '/login', component: Login },
     { path: '/repos', component: Repository },
-    { path: '/register', component: Register }
+    { path: '/register', component: Register },
+    {path: '/:pathMatch(.*)*', component: NotFound}
 ]
 
 const router = createRouter({
