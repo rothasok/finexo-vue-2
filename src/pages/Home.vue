@@ -1,5 +1,6 @@
 <template>
   <Hero></Hero>
+  <p>Updated in the production only</p>
   <Services></Services>
   <About></About>
   <Why></Why>
